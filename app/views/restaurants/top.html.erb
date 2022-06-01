@@ -1,0 +1,9 @@
+<h1>Voici la liste des meilleurs resto</h1>
+<% @restaurants.each do |restaurant| %>
+  <div>
+    <p>Nom du restau: <%= restaurant.name %></p>
+    <p>Adresse : <%= restaurant.address %></p>
+    <p>Phone number : <%= restaurant.phone_number %></p>
+    <p>Category : <%= restaurant.category %></p>
+  </div>
+<% end %>
